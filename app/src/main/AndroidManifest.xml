@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <manifest android:versionName="1.0" android:versionCode="1" package="com.prabhu.womensafetyapp" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"> </uses-permission>
+
+
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:allowBackup="true">
+
+
+    <activity android:name="com.akash.womensafetyapp.MainActivity" android:label="@string/app_name">
+
+
+    <intent-filter>
+
+    <action android:name="android.intent.action.MAIN"/>
+
+    <category android:name="android.intent.category.LAUNCHER"/>
+
+</intent-filter>
+
+</activity>
+
+
+    <activity android:name="com.akash.womensafetyapp.Register"
+        android:label="@string/title_activity_register" android:parentActivityName="com.akash.womensafetyapp.MainActivity">
+
+    <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.akash.womensafetyapp.MainActivity"/>
+
+</activity>
+
+
+    <activity android:name="com.akash.womensafetyapp.Display"
+        android:label="@string/title_activity_display" android:parentActivityName="com.akash.womensafetyapp.MainActivity">
+
+    <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.akash.womensafetyapp.MainActivity"/>
+
+</activity>
+
+    <service android:name="com.akash.womensafetyapp.BgService"/>
+
+
+    <activity android:name="com.akash.womensafetyapp.Instructions"
+        android:label="@string/title_activity_instructions" android:parentActivityName="com.akash.womensafetyapp.MainActivity">
+
+    <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.akash.womensafetyapp.MainActivity"/>
+
+</activity>
+
+
+    <activity android:name="com.akash.womensafetyapp.Verify" android:label="@string/title_activity_verify" android:parentActivityName="com.prabhu.womensafetyapp.MainActivity">
+
+    <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.akash.womensafetyapp.MainActivity"/>
+
+</activity>
+
+</application>
+
+</manifest>
